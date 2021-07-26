@@ -1,0 +1,12 @@
+name: 'Sitemap Optimizer'
+description: 'Chunk sitemap for SEO'
+inputs:
+  siteId:
+    description: 'Site ID'
+    required: true
+outputs:
+  status:
+    description: 'Process status'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

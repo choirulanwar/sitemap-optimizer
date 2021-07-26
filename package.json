@@ -1,0 +1,32 @@
+{
+  "name": "@choirulanwar/sitemap-optimizer",
+  "version": "1.0.0",
+  "description": "Sitemap Optimizer",
+  "main": "dist/index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build:babel": "NODE_ENV=production babel --delete-dir-on-start src --out-dir build",
+    "build:webpack": "node_modules/.bin/webpack",
+    "build": "pnpm build:babel && pnpm build:webpack"
+  },
+  "author": "Choirul Anwar",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "axios": "^0.21.1",
+    "fast-xml-parser": "^3.18.0",
+    "fs-extra": "^9.1.0",
+    "xmlbuilder2": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "nodemon": "^2.0.12",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
